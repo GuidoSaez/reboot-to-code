@@ -5,5 +5,58 @@
 }
 
 body {
+  height: 100vh;
   font-family: "Roboto", sans-serif;
 }
+
+/* ESTILOS DEL HEADER */
+
+.header {
+  /* Posicionamiento */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Modelo de caja */
+  height: 72px;
+  padding: 0 100px;
+  /* Tipografia */
+  /* Visual */
+  background-color: #1F2937;
+  /* Otros */
+}
+
+.header__logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 9%;
+}
+
+/* .header__logo {
+  
+} */
+
+.header__logo-name {
+  font-size: 25px;
+  font-weight: 700;
+
+  color: #fff;
+}
+
+.header__links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 15%;
+
+  list-style: none;
+}
+
+.header__link > a {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+
+  color: #fff;
+}
+
