@@ -5,8 +5,16 @@
 }
 
 body {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+
   font-family: "Roboto", sans-serif;
+}
+
+main {
+  flex: 1;
 }
 
 /* ESTILOS DEL HEADER */
@@ -16,12 +24,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   /* Modelo de caja */
   height: 72px;
   padding: 0 100px;
+
   /* Tipografia */
+
   /* Visual */
   background-color: #1F2937;
+  
   /* Otros */
 }
 
@@ -33,7 +45,7 @@ body {
 }
 
 /* .header__logo {
-  
+  Falta agregar el logo correctamente
 } */
 
 .header__logo-name {
@@ -60,3 +72,64 @@ body {
   color: #fff;
 }
 
+.header__link > a:hover {
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+}
+
+/* ESTILOS DEL HERO */
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 35vh;
+  padding: 50px 400px;
+
+  background-color: #1F2937;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+
+  height: 100%;
+  padding: 20px;
+}
+
+.hero__title {
+  font-size: 48px;
+  font-weight: 900;
+
+  color: #F9FAF8;
+}
+
+.hero__description {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+.hero__button {
+  align-self: flex-start;
+
+  margin-top: 20px;
+  padding: 10px 25px;
+
+  text-decoration: none;
+  font-weight: 900;
+
+  background-color: #3882F6;
+  color: #fff;
+
+  border-radius: 8px;
+}
+
+.hero__img {
+  object-fit: contain;
+  border-radius: 10px;
+}
